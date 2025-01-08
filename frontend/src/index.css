@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom transitions */
+.nav-link {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.stats-card {
+  @apply transition-transform duration-300 ease-in-out hover:scale-105;
+}
+
+.sidebar-link {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+/* Logo animations */
+.logo-spin {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover effects */
+.hover-scale {
+  @apply transition-transform duration-300 ease-in-out hover:scale-105;
+}
+
+/* Card hover effects */
+.status-card {
+  @apply transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1;
+}
